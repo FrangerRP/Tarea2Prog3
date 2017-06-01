@@ -1,0 +1,247 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #5bdb46;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.machine{
+  width: 70%;
+  height: 80%;
+  background: #ffffff;
+  box-shadow: 0px 0px 0px 2px #aaa;
+  position: relative;
+}
+.machine .close{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  right: -20px;
+  top: -20px;
+  text-decoration: none;
+  background: rgb(215, 65, 65);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.machine .close:hover{
+  background: rgb(184, 57, 57);
+  box-shadow: 0px 0px 0px 2px #344E41;
+}
+.machine .return{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  left: -20px;
+  top: -20px;
+  text-decoration: none;
+  background: rgb(65, 148, 215);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.machine .return:hover{
+  background: rgb(57, 134, 184);
+  box-shadow: 0px 0px 0px 2px #344E41;
+}
+/*Desde aqui estara todo el codigo del area de ingreso de Tarjeta*/
+.Area-Card{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Area-Card h1{
+  color: #bbb;
+}
+.Area-Card h1 b{
+  color: #288520;
+}
+.machine .Area-Card .Card{
+  /*background: red;*/
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.machine .Area-Card .Card label{
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #288520;
+}
+.machine .Area-Card .Card .SQR{
+  margin: 10px 0px;
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+  padding: 5px 0px;
+}
+.machine .Area-Card .Card .SQR-SZ{width: 50%;}
+
+.machine .Area-Card .Card .BTN{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 0px;
+  width: 50%;
+  height: 50px;
+  background: #39b42f;
+  color: #fff;
+}
+.machine .Area-Card .Card .BTN:hover{
+  background: #2d9325;
+  cursor: pointer;
+}
+
+/*Desde aqui estara todo el codigo del area de las opciones*/
+
+.Area-option{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content:center;
+}
+.Area-option h2{
+  width: 100%;
+  text-align: center;
+  color: #288520;
+  margin-bottom: 100px;
+}
+.Area-option a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: #344E41;
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Area-option a:hover{
+  background: #56876f;
+  box-shadow: 0px 0px 0px 4px #344E41;
+}
+
+/*Desde aqui comienza el area de consulta*/
+
+.Area-consult{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content:center;
+}
+.Area-consult h1{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #288520;
+}
+
+/*Desde aqui comienza el area de Retiro*/
+.Area-remove{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Area-remove .LongArea{
+  width: 100%;
+  height: 10%;
+  color: #288520;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Area-remove .Area{
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Area-remove .Area a{
+  background: #344E41;
+  color: #fff;
+  text-decoration: none;
+  width: 120px;
+  padding: 20px 0px;
+  text-align: center;
+  margin: 0px 10px;
+  border-radius: 10px;
+}
+.Area-remove .AreaA a{align-self: flex-start;}
+.Area-remove .AreaB a{align-self: flex-end;}
+
+.Area-remove .Area a:hover{
+  background: #55816b;
+  box-shadow: 0px 0px 0px 2px #344E41;
+}
+/*Desde aqui comienza el area de Retiro completado*/
+.Area-complete{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Area-complete h1{
+  color: #288520;
+  font-size: 100px;
+}
+.Area-complete h2{
+  color: #288520;
+  font-size: 40px;
+}
+.Area-complete h3{
+  color: #344E41;
+  font-size: 100px; font-weight: bold;
+}
+
+.machine .close2{
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  right: 0px;
+  bottom: 0px;
+  text-decoration: none;
+  background: rgb(215, 65, 65);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.machine .close2:hover{
+  background: rgb(184, 57, 57);
+  box-shadow: 0px 0px 0px 1px #344E41;
+}
